@@ -7,11 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import ch.qos.logback.core.joran.spi.NoAutoStart;
+
 
 @Entity
 @Table(name="users")
-@NoArgConstructors
+ 
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -62,7 +62,7 @@ public class User {
 	}
 
 	public void setAbout(String about) {
-		this.about = about;
+		this.about = about; 
 	}
 	
 	
